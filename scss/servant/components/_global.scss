@@ -1,0 +1,39 @@
+html, body
+{
+overflow-x:hidden;
+}
+
+@mixin clearfix()
+{
+  &:after
+  {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+.clearfix
+{
+  @include clearfix();
+}
+
+//Defaults, for easy use.
+
+.left
+{
+  float:left;
+}
+.right
+{
+  float:right;
+}
+.noFloat
+{
+  float:none;
+}
+
+.relative
+{
+  position:relative;
+}

@@ -1,0 +1,124 @@
+/* line 14, ../scss/bryanerayner.scss */
+article .emphasis {
+  margin-bottom: 4.375em;
+}
+/* line 17, ../scss/bryanerayner.scss */
+article .emphasis h1, article .emphasis h2 {
+  margin: 0;
+  font-weight: normal;
+}
+/* line 22, ../scss/bryanerayner.scss */
+article .emphasis h2.secondary {
+  font-size: 1.625em;
+}
+/* line 27, ../scss/bryanerayner.scss */
+article .emphasis h1.primary {
+  font-size: 2.8125em;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+/* line 35, ../scss/bryanerayner.scss */
+article h3.heading {
+  font-size: 1.625em;
+  font-weight: normal;
+}
+/* line 41, ../scss/bryanerayner.scss */
+article p {
+  margin-top: 25px;
+  font-size: 0.9375em;
+}
+
+/* line 49, ../scss/bryanerayner.scss */
+.title {
+  height: 11.25em;
+}
+/* line 53, ../scss/bryanerayner.scss */
+.title a.page {
+  position: absolute;
+  top: 4.3125rem;
+}
+
+/* line 60, ../scss/bryanerayner.scss */
+.emphasis + [class*="col"] .heading {
+  margin-top: 0;
+}
+
+/* line 67, ../scss/bryanerayner.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 74, ../scss/bryanerayner.scss */
+a.page {
+  float: left;
+  height: 45px;
+  height: 2.8125rem;
+  padding: 12px 4px 2px 4px;
+  padding: 0.75rem 0.25rem 0.125rem 0.25rem;
+  background-color: #036fcb;
+}
+/* line 84, ../scss/bryanerayner.scss */
+a.page h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* line 101, ../scss/bryanerayner.scss */
+.webDev-language {
+  float: left;
+  width: 3.375em;
+  height: 3.375em;
+  background-color: #332798;
+  position: relative;
+  margin: 0 0.6075em;
+}
+/* line 110, ../scss/bryanerayner.scss */
+.webDev-language img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+}
+
+/* line 126, ../scss/bryanerayner.scss */
+.explorer .explorer-expand.active {
+  clear: left;
+  width: 4000px;
+}
+
+/* line 142, ../scss/bryanerayner.scss */
+section.project-summary {
+  max-width: 27.5em;
+  margin-bottom: 5em;
+}
+/* line 147, ../scss/bryanerayner.scss */
+section.project-summary[class*="col"].col-1 {
+  float: left;
+  padding: 0px;
+  margin-right: 3.125em;
+}
+/* line 154, ../scss/bryanerayner.scss */
+section.project-summary .project-summary-thumbnail {
+  position: relative;
+}
+/* line 158, ../scss/bryanerayner.scss */
+section.project-summary .project-summary-thumbnail .skills {
+  position: absolute;
+  top: 0.5625em;
+  right: 0.5625em;
+}
+/* line 164, ../scss/bryanerayner.scss */
+section.project-summary .project-summary-thumbnail .skills .webDev-language {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.36em;
+}
+/* line 171, ../scss/bryanerayner.scss */
+section.project-summary .project-summary-thumbnail a.page {
+  position: absolute;
+  bottom: 0.5625em;
+  left: 0.5625em;
+}

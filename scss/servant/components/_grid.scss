@@ -1,0 +1,84 @@
+
+
+$grid-max-width: em-calc(1024px) !default;
+
+$grid-gutter: em-calc(20px) !default;
+
+$grid-total-columns-2: 1 !default;
+$grid-total-columns-3: 2 !default;
+$grid-total-columns-4: 3 !default;
+$grid-total-columns-5: 4 !default;
+$grid-total-columns-6: 5 !default;
+$grid-total-columns-8: 6 !default;
+$grid-total-columns-10: 8 !default;
+$grid-total-columns-12: 4 !default;
+
+
+
+@mixin column-fraction($base, $limit)
+{
+	@for $i from 1 through $base {
+      .col-#{$i}-#{$base} { @include grid-column($column:$i,$base:$base); }
+    }
+}
+
+@mixin grid-column($column, $base)
+{
+	width: percentage($column/$base);
+}
+
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.grid
+{
+	clear:both;
+	width:100%;
+	max-width:$grid-max-width;
+
+	&.center
+	{
+		margin:0 auto;
+	}
+
+	.row
+	{
+		width: 100%;
+	}
+
+	[class*='col-'] {
+	  padding-right: $grid-gutter;
+	  float:left;
+	}
+	[class*='col-']:last-child {
+	  padding-right: 0;
+	  float:right;
+	}
+	[class*='col-'].end{
+	  float:left;
+	}
+
+	.col-1
+	{
+		width:100%;
+	}
+	@include column-fraction(2, $grid-total-columns-2);
+	@include column-fraction(3,$grid-total-columns-3);
+	@include column-fraction(4,$grid-total-columns-4);
+	@include column-fraction(5,$grid-total-columns-5);
+	@include column-fraction(6,$grid-total-columns-6);
+	@include column-fraction(8,$grid-total-columns-8);
+	@include column-fraction(10,$grid-total-columns-10);
+	@include column-fraction(12,$grid-total-columns-12);
+
+	@include clearfix();
+}
+
+

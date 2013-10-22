@@ -1,3 +1,7 @@
+$servant-command-include-nav-main: true !default;
+$servant-command-include-nav-left: true !default;
+
+
 $nav-main-background-color: #00060b !default;
 
 $nav-main-min-height: em-calc(46px) !default;
@@ -22,7 +26,8 @@ overflow-x:hidden;
 
 
 
-
+@if ($servant-command-include-nav-main)
+{
 nav.main
 {
 	ul, li{
@@ -127,4 +132,14 @@ nav.main
 
 
 
+}
+}
+
+@if ($servant-command-include-nav-left)
+{
+nav.left
+{
+	
+	
+}
 }

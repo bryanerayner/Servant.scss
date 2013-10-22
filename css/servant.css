@@ -1,317 +1,321 @@
 @charset "UTF-8";
-/* line 2, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 2, ../scss/servant/components/_global.scss */
 html, body {
   overflow-x: hidden;
 }
 
-/* line 7, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 7, ../scss/servant/components/_global.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 17, ../scss/servant/components/_global.scss */
 .clearfix:after, nav.left:after, nav.left a:after, nav.left ul.link:after, nav.left ul.links:after, nav.left ul.link li.link:after, nav.left ul.link li.links:after, nav.left ul.links li.link:after, nav.left ul.links li.links:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 32, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 32, ../scss/servant/components/_global.scss */
 .left, nav.left a, nav.left a img, nav.left a h3, nav.left section.primary {
   float: left;
 }
 
-/* line 36, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 36, ../scss/servant/components/_global.scss */
 .right {
   float: right;
 }
 
-/* line 40, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 40, ../scss/servant/components/_global.scss */
 .noFloat {
   float: none;
 }
 
-/* line 45, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 45, ../scss/servant/components/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 50, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 50, ../scss/servant/components/_global.scss */
 .fullHeight {
   height: 100%;
 }
 
-/* line 35, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 35, ../scss/servant/components/_grid.scss */
 .grid {
   clear: both;
   width: 100%;
   max-width: 64em;
 }
-/* line 41, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 41, ../scss/servant/components/_grid.scss */
 .grid.center {
   margin: 0 auto;
 }
-/* line 46, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 46, ../scss/servant/components/_grid.scss */
 .grid .row {
   width: 100%;
 }
-/* line 50, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 50, ../scss/servant/components/_grid.scss */
 .grid [class*='col-'] {
   padding-right: 1.25em;
   float: left;
 }
-/* line 54, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 54, ../scss/servant/components/_grid.scss */
 .grid [class*='col-']:last-child {
   padding-right: 0;
   float: right;
 }
-/* line 58, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 58, ../scss/servant/components/_grid.scss */
 .grid [class*='col-'].end {
   float: left;
 }
-/* line 63, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 63, ../scss/servant/components/_grid.scss */
 .grid .col-1 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-2 {
   width: 50%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-2 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-3 {
   width: 33.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-3 {
   width: 66.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-3 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-4 {
   width: 25%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-4 {
   width: 50%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-4 {
   width: 75%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-4-4 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-5 {
   width: 20%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-5 {
   width: 40%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-5 {
   width: 60%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-4-5 {
   width: 80%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-5-5 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-6 {
   width: 16.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-6 {
   width: 33.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-6 {
   width: 50%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-4-6 {
   width: 66.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-5-6 {
   width: 83.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-6-6 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-8 {
   width: 12.5%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-8 {
   width: 25%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-8 {
   width: 37.5%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-4-8 {
   width: 50%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-5-8 {
   width: 62.5%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-6-8 {
   width: 75%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-7-8 {
   width: 87.5%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-8-8 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-10 {
   width: 10%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-10 {
   width: 20%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-10 {
   width: 30%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-4-10 {
   width: 40%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-5-10 {
   width: 50%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-6-10 {
   width: 60%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-7-10 {
   width: 70%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-8-10 {
   width: 80%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-9-10 {
   width: 90%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-10-10 {
   width: 100%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-1-12 {
   width: 8.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-2-12 {
   width: 16.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-3-12 {
   width: 25%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-4-12 {
   width: 33.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-5-12 {
   width: 41.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-6-12 {
   width: 50%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-7-12 {
   width: 58.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-8-12 {
   width: 66.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-9-12 {
   width: 75%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-10-12 {
   width: 83.33333%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-11-12 {
   width: 91.66667%;
 }
-/* line 21, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_grid.scss */
+/* line 21, ../scss/servant/components/_grid.scss */
 .grid .col-12-12 {
   width: 100%;
 }
-/* line 17, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_global.scss */
+/* line 17, ../scss/servant/components/_global.scss */
 .grid:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 49, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 49, ../scss/servant/components/_nav.scss */
 html, body {
   overflow-x: hidden;
 }
 
-/* line 176, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 176, ../scss/servant/components/_nav.scss */
 html, body {
   height: 100%;
   overflow-y: hidden;
 }
 
-/* line 183, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 183, ../scss/servant/components/_nav.scss */
 nav.left {
-  height: 100%;
   min-width: 15.625em;
-  max-width: 15.625em;
-  position: relative;
+  max-width: 100%;
   background-color: #00060b;
 }
-/* line 195, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 187, ../scss/servant/components/_nav.scss */
+nav.left.fullHeight {
+  height: 100%;
+}
+/* line 195, ../scss/servant/components/_nav.scss */
 nav.left nav.left {
   max-width: 100%;
   min-width: 0;
+  width: 100%;
   clear: left;
+  position: static;
 }
-/* line 200, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 202, ../scss/servant/components/_nav.scss */
 nav.left ul, nav.left li {
   display: block;
 }
-/* line 204, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 206, ../scss/servant/components/_nav.scss */
 nav.left:before, nav.left:after {
   content: "";
   position: absolute;
@@ -321,46 +325,46 @@ nav.left:before, nav.left:after {
   width: 100%;
   display: block;
 }
-/* line 214, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 216, ../scss/servant/components/_nav.scss */
 nav.left:before {
   right: 100%;
 }
-/* line 218, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 220, ../scss/servant/components/_nav.scss */
 nav.left:after {
   left: 100%;
 }
-/* line 227, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 229, ../scss/servant/components/_nav.scss */
 nav.left a {
   color: white;
 }
-/* line 233, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 235, ../scss/servant/components/_nav.scss */
 nav.left a img {
   display: block;
   width: 2.875em;
 }
-/* line 242, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 244, ../scss/servant/components/_nav.scss */
 nav.left a h3 {
   margin: 0.625em 0.375em;
   text-decoration: none;
 }
-/* line 256, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 258, ../scss/servant/components/_nav.scss */
 nav.left ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 268, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 270, ../scss/servant/components/_nav.scss */
 nav.left ul.link nav.left, nav.left ul.links nav.left {
   display: none;
 }
-/* line 274, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 276, ../scss/servant/components/_nav.scss */
 nav.left ul.link li.link, nav.left ul.link li.links, nav.left ul.links li.link, nav.left ul.links li.links {
   padding: 0 0.9375em;
   min-height: 2.875em;
   float: left;
   clear: left;
 }
-/* line 290, C:/Users/rayn0021/Documents/GitHub/Servant.scss/scss/servant/components/_nav.scss */
+/* line 292, ../scss/servant/components/_nav.scss */
 nav.left li.links:hover > nav.left, nav.left li.links.hover > nav.left {
   display: block;
 }

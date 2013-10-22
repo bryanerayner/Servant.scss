@@ -1,6 +1,11 @@
 $servant-command-include-nav-main: true !default;
 $servant-command-include-nav-left: true !default;
 
+$servant-command-display-nav-main-fullWidth: true !default;
+$servant-command-display-nav-left-fullHeight: true !default;
+
+
+//Main variables
 
 $nav-main-background-color: #00060b !default;
 
@@ -19,6 +24,27 @@ $nav-main-link-h3-margin-sides:em-calc(6px) !default;
 $nav-main-link-h3-margin:join($nav-main-link-h3-margin-tops,$nav-main-link-h3-margin-sides );
 
 
+//Left variables
+$nav-left-background-color: #00060b !default;
+
+$nav-left-min-height: em-calc(46px) !default;
+$nav-left-max-height: em-calc(46px) !default;
+
+$nav-left-min-width: em-calc(250px) !default;
+$nav-left-max-width: em-calc(250px) !default;
+
+$nav-left-link-color: #fff !default;
+$nav-left-link-padding-top: 0 !default;
+$nav-left-link-padding-sides: em-calc(15px) !default;
+
+$nav-left-link-padding: join($nav-left-link-padding-top ,$nav-left-link-padding-sides);
+
+$nav-left-link-h3-margin-tops: em-calc(10px) !default;
+$nav-left-link-h3-margin-sides:em-calc(6px) !default;
+
+$nav-left-link-h3-margin:join($nav-left-link-h3-margin-tops,$nav-left-link-h3-margin-sides );
+
+
 html, body
 {
 overflow-x:hidden;
@@ -33,23 +59,28 @@ nav.main
 	ul, li{
 		display: block;
 	}
-	&:before, &:after
+	;
+
+	@if($servant-command-display-nav-main-fullWidth)
 	{
-		content:"";
-		position:absolute;
-		background:inherit;
-		top:0;
-		bottom:0;
-		width:100%;
-		display:block;
-	}
-	&:before
-	{
-		right:100%;
-	}
-	&:after
-	{
-		left:100%;
+		&:before, &:after
+		{
+			content:"";
+			position:absolute;
+			background:inherit;
+			top:0;
+			bottom:0;
+			width:100%;
+			display:block;
+		}
+		&:before
+		{
+			right:100%;
+		}
+		&:after
+		{
+			left:100%;
+		}
 	}
 
 	@extend .clearfix;
@@ -140,6 +171,113 @@ nav.main
 nav.left
 {
 	
+	@if($servant-command-display-nav-main-fullHeight)
+	{
+		
+	}
+
+	min-width: $nav-left-min-width;
+	max-width:$nav-left-max-width;
+	position:relative;
+	background-color: $nav-left-background-color;
+	nav.left{
+		max-width:100%;
+		min-width: 0;
+		clear:left;
+	}
+	ul, li{
+		display: block;
+	}
+	&:before, &:after
+	{
+		content:"";
+		position:absolute;
+		background:inherit;
+		top:0;
+		bottom:0;
+		width:100%;
+		display:block;
+	}
+	&:before
+	{
+		right:100%;
+	}
+	&:after
+	{
+		left:100%;
+	}
+
+	@extend .clearfix;
+	
+
+
+
+	a{
+		@extend .clearfix;
+		@extend .left;
+		color:$nav-left-link-color;
+
+		img
+		{
+			@extend .left;
+			display:block;
+			width:$nav-left-min-height;
+		}
+
+
+
+		h3
+		{
+			@extend .left;
+			margin:$nav-left-link-h3-margin;
+			text-decoration: none;
+		}
+
+	}
+
+	section.primary
+	{
+		@extend .left;
+	}
+
+	ul
+	{
+		margin:0;
+		padding:0;
+		list-style: none;
+
+		&.link, &.links
+		{
+			@extend .clearfix;
+
+
+			
+
+			nav.left {				
+				display: none;
+			}
+
+
+			li.link, li.links
+			{
+				@extend .clearfix;
+				padding: $nav-left-link-padding;
+				min-height:$nav-left-min-height;
+				float:left;
+				clear:left;
+			}
+
+		}
+	}
+
+	
+		
+
+
+
+	li.links:hover > nav.left, li.links.hover > nav.left{
+		display:block;
+	}
 	
 }
 }

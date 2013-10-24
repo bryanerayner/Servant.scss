@@ -33,6 +33,15 @@ $grid-total-columns-12: 4 !default;
 
 .grid
 {
+	&.noClear
+	{
+		@extend .noClear;
+	}
+	&.flex
+	{
+		width: auto;
+		max-width: none;
+	}
 	clear:both;
 	width:100%;
 	max-width:$grid-max-width;

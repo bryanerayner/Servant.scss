@@ -40,6 +40,10 @@ overflow-x:hidden;
 {
   float:none;
 }
+.noClear
+{
+  clear:none;
+}
 
 .relative
 {
@@ -49,4 +53,9 @@ overflow-x:hidden;
 .fullHeight
 {
   height:100%;
+}
+.fullWidth, .grid.fullWidth
+{
+  width:100%;
+  max-width: 100%;
 }

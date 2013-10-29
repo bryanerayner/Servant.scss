@@ -1,9 +1,9 @@
 #################
 ## SASS
 #################
-.scss-cache/
-.sass-cache/
-.scssc
+.scss-cache/*
+.sass-cache/*
+*.scssc
 
 #################
 ## Eclipse

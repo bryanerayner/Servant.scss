@@ -1,54 +1,49 @@
 @charset "UTF-8";
-/* line 2, ../scss/servant/components/_global.scss */
-html, body {
-  overflow-x: hidden;
-}
-
-/* line 7, ../scss/servant/components/_global.scss */
+/* line 12, ../scss/servant/components/_global.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, ../scss/servant/components/_global.scss */
+/* line 22, ../scss/servant/components/_global.scss */
 .clearfix:after, nav.left:after, nav.left a:after, nav.left ul.link:after, nav.left ul.links:after, nav.left ul.link li.link:after, nav.left ul.link li.links:after, nav.left ul.links li.link:after, nav.left ul.links li.links:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 32, ../scss/servant/components/_global.scss */
+/* line 37, ../scss/servant/components/_global.scss */
 .left, nav.left a, nav.left a img, nav.left a h3, nav.left section.primary {
   float: left;
 }
 
-/* line 36, ../scss/servant/components/_global.scss */
+/* line 41, ../scss/servant/components/_global.scss */
 .right {
   float: right;
 }
 
-/* line 40, ../scss/servant/components/_global.scss */
+/* line 45, ../scss/servant/components/_global.scss */
 .noFloat {
   float: none;
 }
 
-/* line 44, ../scss/servant/components/_global.scss */
+/* line 49, ../scss/servant/components/_global.scss */
 .noClear, .grid.noClear {
   clear: none;
 }
 
-/* line 49, ../scss/servant/components/_global.scss */
+/* line 54, ../scss/servant/components/_global.scss */
 .relative {
   position: relative;
 }
 
-/* line 54, ../scss/servant/components/_global.scss */
+/* line 59, ../scss/servant/components/_global.scss */
 .fullHeight {
   height: 100%;
 }
 
-/* line 58, ../scss/servant/components/_global.scss */
+/* line 63, ../scss/servant/components/_global.scss */
 .fullWidth, .grid.fullWidth {
   width: 100%;
   max-width: 100%;
@@ -291,34 +286,29 @@ html, body {
 .grid .col-12-12 {
   width: 100%;
 }
-/* line 17, ../scss/servant/components/_global.scss */
+/* line 22, ../scss/servant/components/_global.scss */
 .grid:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 49, ../scss/servant/components/_nav.scss */
-html, body {
-  overflow-x: hidden;
-}
-
-/* line 176, ../scss/servant/components/_nav.scss */
+/* line 183, ../scss/servant/components/_nav.scss */
 html, body {
   height: 100%;
 }
 
-/* line 182, ../scss/servant/components/_nav.scss */
+/* line 189, ../scss/servant/components/_nav.scss */
 nav.left {
   min-width: 15.625em;
   max-width: 100%;
   background-color: #00060b;
 }
-/* line 186, ../scss/servant/components/_nav.scss */
+/* line 193, ../scss/servant/components/_nav.scss */
 nav.left.fullHeight {
   height: 100%;
 }
-/* line 194, ../scss/servant/components/_nav.scss */
+/* line 201, ../scss/servant/components/_nav.scss */
 nav.left nav.left {
   max-width: 100%;
   min-width: 0;
@@ -326,11 +316,11 @@ nav.left nav.left {
   clear: left;
   position: static;
 }
-/* line 201, ../scss/servant/components/_nav.scss */
+/* line 208, ../scss/servant/components/_nav.scss */
 nav.left ul, nav.left li {
   display: block;
 }
-/* line 205, ../scss/servant/components/_nav.scss */
+/* line 212, ../scss/servant/components/_nav.scss */
 nav.left:before, nav.left:after {
   content: "";
   position: absolute;
@@ -340,46 +330,46 @@ nav.left:before, nav.left:after {
   width: 100%;
   display: block;
 }
-/* line 215, ../scss/servant/components/_nav.scss */
+/* line 222, ../scss/servant/components/_nav.scss */
 nav.left:before {
   right: 100%;
 }
-/* line 219, ../scss/servant/components/_nav.scss */
+/* line 226, ../scss/servant/components/_nav.scss */
 nav.left:after {
   left: 100%;
 }
-/* line 228, ../scss/servant/components/_nav.scss */
+/* line 235, ../scss/servant/components/_nav.scss */
 nav.left a {
   color: white;
 }
-/* line 234, ../scss/servant/components/_nav.scss */
+/* line 241, ../scss/servant/components/_nav.scss */
 nav.left a img {
   display: block;
   width: 2.875em;
 }
-/* line 243, ../scss/servant/components/_nav.scss */
+/* line 250, ../scss/servant/components/_nav.scss */
 nav.left a h3 {
   margin: 0.625em 0.375em;
   text-decoration: none;
 }
-/* line 257, ../scss/servant/components/_nav.scss */
+/* line 264, ../scss/servant/components/_nav.scss */
 nav.left ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 269, ../scss/servant/components/_nav.scss */
+/* line 276, ../scss/servant/components/_nav.scss */
 nav.left ul.link nav.left, nav.left ul.links nav.left {
   display: none;
 }
-/* line 275, ../scss/servant/components/_nav.scss */
+/* line 282, ../scss/servant/components/_nav.scss */
 nav.left ul.link li.link, nav.left ul.link li.links, nav.left ul.links li.link, nav.left ul.links li.links {
   padding: 0 0.9375em;
   min-height: 2.875em;
   float: left;
   clear: left;
 }
-/* line 291, ../scss/servant/components/_nav.scss */
+/* line 298, ../scss/servant/components/_nav.scss */
 nav.left li.links:hover > nav.left, nav.left li.links.hover > nav.left {
   display: block;
 }

@@ -1,3 +1,5 @@
+$servant-command-disable-scroll-vertical:true !default;
+
 $servant-command-include-nav-main: true !default;
 $servant-command-include-nav-left: true !default;
 
@@ -45,9 +47,14 @@ $nav-left-link-h3-margin-sides:em-calc(6px) !default;
 $nav-left-link-h3-margin:join($nav-left-link-h3-margin-tops,$nav-left-link-h3-margin-sides );
 
 
+
+
+@if ( $servant-command-disable-scroll-vertical)
+{
 html, body
 {
 overflow-x:hidden;
+}
 }
 
 

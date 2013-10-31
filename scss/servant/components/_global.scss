@@ -1,8 +1,13 @@
+$servant-command-disable-scroll-vertical: true !default;
+
+
+@if ( $servant-command-disable-scroll-vertical)
+{
 html, body
 {
 overflow-x:hidden;
 }
-
+}
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
